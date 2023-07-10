@@ -10,7 +10,7 @@ class SoccerApi {
       'api-football-beta.p.rapidapi.com', '/fixtures', {"date": "2022-01-18"});
   static const headers = {
     'X-RapidAPI-Host': "api-football-beta.p.rapidapi.com",
-    "X-RapidAPI-Key": "7f4aa81c83msh56724a6c19ca923p193343jsnabf459652f9c",
+    "X-RapidAPI-Key": "",
   };
 
   Future<List<SoccerMatch>> getAllMatches() async {
@@ -42,7 +42,7 @@ class cricapi {
       '/matches/list', {"matchState": "live"});
   static const headers = {
     'X-RapidAPI-Host': "unofficial-cricbuzz.p.rapidapi.com",
-    "X-RapidAPI-Key": "7f4aa81c83msh56724a6c19ca923p193343jsnabf459652f9c",
+    "X-RapidAPI-Key": "",
   };
   Future<List<cricketapi>> cricsmatches() async {
     http.Response res = await http.get(
